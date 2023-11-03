@@ -17,6 +17,7 @@ const config: StorybookConfig = {
         transcludeMarkdown: true,
       },
     },
+    '@storybook/addon-themes',
   ],
   framework: {
     name: '@storybook/react-vite',
