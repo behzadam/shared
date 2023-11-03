@@ -10063,15 +10063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.292.0":
-  version: 0.292.0
-  resolution: "lucide-react@npm:0.292.0"
-  peerDependencies:
-    react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 4e71cdc3a6ca91b090f1253d275e7ebf7644f9ad1121e94b3d0c1f4938b935c69309be5fb093ee24afd932733e8e2ef4e29baf3c8c7b89477683625bafd40726
-  languageName: node
-  linkType: hard
-
 "lz-string@npm:^1.5.0":
   version: 1.5.0
   resolution: "lz-string@npm:1.5.0"
@@ -13186,7 +13177,6 @@ __metadata:
     eslint-plugin-storybook: ^0.6.14
     gh-pages: ^6.0.0
     jsdom: ^22.1.0
-    lucide-react: ^0.292.0
     node-sass: ^9.0.0
     postcss: ^8.4.29
     postcss-scss: ^4.0.8
@@ -13212,8 +13202,10 @@ __metadata:
     vitest: ^0.34.4
   peerDependencies:
     clsx: 2.x
+    lucide-react: ^0.292.0
     react: 18.x
     react-dom: 18.x
+    tailwind-merge: ^2.0.0
   languageName: unknown
   linkType: soft
 
