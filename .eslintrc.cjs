@@ -74,9 +74,9 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
   },
-  ignorePatterns: ['.eslintrc.cjs', 'vitest.config.ts', 'setupTests.ts'],
+  ignorePatterns: ['.eslintrc.cjs', 'vitest.config.ts', 'setupTests.ts', './src/components/ui'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
