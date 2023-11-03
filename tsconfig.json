@@ -15,12 +15,10 @@
     "declarationDir": "types",
 
     "noEmit": false,
-    "baseUrl": "./src",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
     "paths": {
-      "*": [
-        "*",
-      ]
+      "@/*": ["./src/*"]
     },
     "allowJs": true,
     "isolatedModules": true,
@@ -32,13 +30,8 @@
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "types": ["@testing-library/jest-dom"],
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src", "*.tsx", "*.ts"],
-  "exclude": [
-    "coverage",
-    "config",
-    "dist",
-    "node_modules/**"
-  ]
+  "exclude": ["coverage", "config", "dist", "node_modules/**"]
 }
