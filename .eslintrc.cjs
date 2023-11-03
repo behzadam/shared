@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:storybook/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   plugins: ['react', 'react-hooks', 'react-refresh', 'storybook', 'import', 'jsx-a11y', 'prettier'],
   env: {
@@ -31,14 +31,7 @@ module.exports = {
       jsx: true,
     },
   },
-  ignorePatterns: [
-    '!*.js',
-    '!.storybook',
-    '.*.js',
-    '*.json',
-    'scripts',
-    'src/graphql/generated/*',
-  ],
+  ignorePatterns: ['!*.js', '!.storybook', '.*.js', '*.json', 'scripts', 'src/graphql/generated/*'],
   rules: {
     'react-refresh/only-export-components': 'off',
     'newline-before-return': 'error',
@@ -58,10 +51,7 @@ module.exports = {
       },
     ],
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-curly-brace-presence': [
-      'error',
-      { props: 'never', children: 'never' },
-    ],
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -80,14 +70,11 @@ module.exports = {
           },
         ],
         pathGroupsExcludedImportTypes: ['builtin'],
-        groups: [
-          ['builtin', 'external'],
-          ['internal'],
-          ['parent', 'sibling', 'index'],
-          'unknown',
-        ],
+        groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index'], 'unknown'],
       },
     ],
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
   ignorePatterns: ['.eslintrc.cjs', 'vitest.config.ts', 'setupTests.ts'],
   overrides: [
@@ -105,24 +92,12 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       rules: {
-        '@typescript-eslint/no-use-before-define': [
-          'error',
-          { functions: false },
-        ],
-        '@typescript-eslint/no-floating-promises': [
-          'error',
-          { ignoreVoid: true },
-        ],
+        '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
+        '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
       },
     },
     {
-      files: [
-        '*story.*',
-        '*stories.*',
-        'src/pages/**/*.tsx',
-        'additional.d.ts',
-        '**/__mocks__/**',
-      ],
+      files: ['*story.*', '*stories.*', 'src/pages/**/*.tsx', 'additional.d.ts', '**/__mocks__/**'],
       rules: {
         'import/no-anonymous-default-export': 'off',
         'import/no-default-export': 'off',
