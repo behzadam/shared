@@ -37,11 +37,13 @@
     "storybook:deploy": "yarn storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
   },
   "peerDependencies": {
+    "class-variance-authority": "*",
     "clsx": "2.x",
     "lucide-react": "^0.292.0",
     "react": "18.x",
     "react-dom": "18.x",
-    "tailwind-merge": "^2.0.0"
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "*"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",

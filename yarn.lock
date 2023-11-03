@@ -13201,11 +13201,13 @@ __metadata:
     vite-plugin-svgr: ^3.2.0
     vitest: ^0.34.4
   peerDependencies:
+    class-variance-authority: "*"
     clsx: 2.x
     lucide-react: ^0.292.0
     react: 18.x
     react-dom: 18.x
     tailwind-merge: ^2.0.0
+    tailwindcss-animate: "*"
   languageName: unknown
   linkType: soft
 
