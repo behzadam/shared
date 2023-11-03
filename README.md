@@ -7,8 +7,8 @@ This project is a clone of [React Rollup Boilerplate](https://github.com/KaiHotz
 ## Getting started
 
 ```
-git clone git@github.com:KaiHotz/react-rollup-boilerplate.git
-cd react-rollup-boilerplate
+git clone git@github.com:behzadam/shared.git
+cd shared
 yarn install
 ```
 
