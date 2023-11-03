@@ -1,16 +1,9 @@
+import type { StorybookConfig } from '@storybook/react-vite';
 import { mergeConfig } from 'vite';
 import svgr from 'vite-plugin-svgr';
-import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
-  stories: [
-    '../src/**/*.mdx',
-    '../src/**/*.stories.@(js|jsx|ts|tsx)',
-    '../src/components/**/*.stories.mdx',
-    '../src/components/**/*.story.mdx',
-    '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
-    '../src/components/**/*.story.@(js|jsx|ts|tsx)'
-  ],
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -21,8 +14,8 @@ const config: StorybookConfig = {
         configureJSX: true,
         babelOptions: {},
         sourceLoaderOptions: null,
-        transcludeMarkdown: true
-      }
+        transcludeMarkdown: true,
+      },
     },
   ],
   framework: {
@@ -33,17 +26,15 @@ const config: StorybookConfig = {
     autodocs: true,
   },
   core: {
-    disableTelemetry: true
+    disableTelemetry: true,
   },
   async viteFinal(config) {
     // Merge custom configuration into the default config
     return mergeConfig(config, {
       // Add dependencies to pre-optimization
       plugins: [svgr()],
-
     });
   },
-
 };
 
 export default config;
